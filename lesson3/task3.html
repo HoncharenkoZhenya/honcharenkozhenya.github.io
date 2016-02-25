@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body>
+    <form>
+        <p>
+            <label>
+                Name<br/>
+                <input type="text" name="name" value="Yevhenii">
+            </label>
+        </p>
+        <p>
+            <label>
+                Email<br/>
+                <input type="email" name="email" value="simens@i.ua">
+            </label>
+        </p>
+        <p>
+            Sex<br/>
+            <label><input type="radio" name="sex" value="male" selected="selected">Male</label>
+            <label><input type="radio" name="sex" value="female">Female</label>
+        </p>
+        <p>
+            Current status<br/>
+            <label><input type="checkbox" name="status" value="student">Student</label><br/>
+            <label><input type="checkbox" name="status" value="employed">Employed</label><br/>
+            <label><input type="checkbox" name="status" value="unemployed">Unemployed</label><br/>
+        </p>
+        <p>
+            Month and years of birth<br/>
+            <input type="month" name="month">
+            <select name="year" size="1">
+                <option value="1993">1993</option>
+                <option value="1993">1994</option>
+                <option value="1993">1995</option>
+                <option value="1993">1996</option>
+                <option value="1993">1997</option>
+                <option value="1993">1998</option>
+                <option value="1993">1999</option>
+                <option value="1993">2000</option>
+                <option value="1993">2001</option>
+                <option value="1993">2002</option>
+            </select>
+        </p>
+        <p>
+            <select name="skill" size="10" multiple="multiple">
+                <optgroup label="Tech skills">
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="git">GIT</option>
+                </optgroup>
+                <optgroup label="Soft skills">
+                    <option value="timemanagment">Time managment</option>
+                    <option value="teamwork">Teamwork</option>
+                </optgroup>
+            </select>
+        <p>
+            Photo<br/>
+            <input type="file" label="Choose photo">
+        </p>
+        <p>
+            <textarea name="mytext" rows="4" cols="16">
+
+            </textarea>
+        </p>
+        <p>
+            <input type="submit" label="Save">
+        </p>
+    </form>
+</body>
+</html>
