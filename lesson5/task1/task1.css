@@ -1,0 +1,38 @@
+div{
+    background-color: #2882ff;
+}
+.menu_travels {
+    visibility: visible;
+}
+nav {
+    width: 900px;
+    margin: auto;
+}
+
+li{
+    display: inline-block;
+}
+a{
+    display: block;
+    font-family: Impact;
+    font-size: larger;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px;
+}
+a:hover{
+    background-color:#eee;
+    color: #a0a0a2;
+}
+.submenu {
+    display: none;
+}
+#travels:hover ~ .menu_travels{
+    display: block;
+}
+#sport:hover ~ .menu_sport {
+    display: block;
+}
+.submenu:hover {
+    display: block;
+}
