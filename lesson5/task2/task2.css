@@ -14,7 +14,7 @@
     background-color: #f5f5f6;
 }
 .list>li:before {
-    content: url(Shape4.png);
+    content: url(../../lesson6/task1/Shape4.png);
     padding:0 20px;
 }
 .price{
