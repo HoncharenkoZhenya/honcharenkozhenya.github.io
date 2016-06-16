@@ -1,0 +1,111 @@
+@font-face {
+    font-family: OpenSans-Regular;
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+@font-face{
+    font-family: Futura Md;
+    src: url(../fonts/Futura%20Md.ttf);
+}
+@font-face {
+    font-family: Calibri;
+    src: url(../fonts/Calibri.ttf);
+}
+@font-face {
+    font-family: Trebuchet MS;
+    src: url(../fonts/Trebuchet%20MS.ttf);
+}
+@font-face {
+    font-family: FuturaBT;
+    src: url(../fonts/futurabt-book-opentype.otf);
+}
+@font-face {
+    font-family: Myriad Pro;
+    src: url(../fonts/MyriadProRegular.ttf);
+}
+body{
+    padding: 0;
+    width: 100%;
+    margin:0 auto;
+}
+.header {
+    margin-bottom: 37px;
+}
+.header_logo{
+    display: inline-block;
+    position: relative;
+    left: 188px;
+    top:37px;
+}
+.header_menu{
+    display: inline-block;
+    position: relative;
+    left: 345px;
+    top:37px;
+}
+.header_menu_link{
+    font-family: "OpenSans-Regular";
+    color: #adadad;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px 20px 40px 15px;
+    border: 4px solid transparent;
+    vertical-align: middle;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+}
+.header_menu_link:hover {
+    color: #2098d1;
+    font-weight: 700;
+    border-bottom: solid #2098d1 4px;
+}
+.main {
+    width: 100%;
+    height: 590px;
+    background-image: url("../images/Rectangle.png");
+    background-size: 100%;
+    position: relative;
+}
+.main p {
+    color: white;
+    text-align: center;
+}
+.pFirst {
+    font-size: 36px;
+    font-family: "OpenSans-Regular";
+    position: relative;
+    top: 130px;
+}
+.pSecond {
+    font-family: "Futura Md";
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 48px;
+    position: relative;
+    top: 90px;
+}
+.pThird {
+    font-size: 20px;
+    font-family: "Calibri";
+    font-style: italic;
+    position: relative;
+    top: 70px;
+}
+.button {
+    display: inline;
+    color: white;
+    left: 590px;
+    position: relative;
+    top: 70px;
+    background: transparent;
+    height: 60px;
+    width: 240px;
+    border: none;
+    border-left: solid white 1px;
+    border-right: solid white 1px;
+    font-weight: 700;
+}
+.button:hover {
+    border: none;
+    border-bottom: solid white 1px;
+}

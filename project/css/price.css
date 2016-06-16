@@ -134,7 +134,7 @@ body
     margin-bottom: 1px;
 }
 .choose li:before{
-    content: url(Shape4.png);
+    content: url(../images/Shape4.png);
     margin: 0 15px 0 30px;
 }
 .choose li {
