@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.main_box {
+    width: 100%;
+    position: absolute;
+}
+.box {
+    display: inline-block;
+    width: calc(50% - 22px);
+
+}
+.box-l {
+    margin-right: 40px;
+}
+.people {
+    min-height: 85px;
+}
+.box-l .p-t {
+    margin-bottom: 30px;
+}
+.box-r .p-t {
+    margin-bottom: 30px;
+}
+img {
+    float: left;
+}
+.info {
+    margin-left: 115px;
+}
+.info h2 {
+    font-size: 22px;
+    color: #637f83;
+}
+.info p {
+    font-size: 14px;
+    color: #959595;
+}
