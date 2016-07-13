@@ -82,6 +82,20 @@
             <!--right block-->
             <div class="col-lg-9 col-lg-push-3">
 
+
+                <form role="search" class="visible-xs">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <input type="search" class="form-control input-lg" placeholder="Ваш запрос">
+
+                            <div class="input-group-btn">
+                                <button class="btn btn-default btn-lg" type="submit"><i
+                                        class="glyphicon glyphicon-search"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
                 <h2>Новые фильмы</h2>
                 <hr>
 
@@ -89,21 +103,25 @@
 
                     <div class="film_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
                         <img src="assets/img/inter.png" alt="Интерстеллар">
+
                         <div class="film_label">Интерстеллар</div>
                     </div>
 
                     <div class="film_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
                         <img src="assets/img/matrix.png" alt="Матрица">
+
                         <div class="film_label">Матрица</div>
                     </div>
 
                     <div class="film_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
                         <img src="assets/img/cloud.png" alt="Облачный атлас">
+
                         <div class="film_label">Облачный атлас</div>
                     </div>
 
                     <div class="film_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
                         <img src="assets/img/max.png" alt="Безумный Макс">
+
                         <div class="film_label">Безумный Макс</div>
                     </div>
 
@@ -118,25 +136,46 @@
 
                     <div class="film_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
                         <img src="assets/img/xfiles.png" alt="Секретные материалы">
+
                         <div class="film_label">Секретные материалы</div>
                     </div>
 
                     <div class="film_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
                         <img src="assets/img/silicon.png" alt="Кремневая долина">
+
                         <div class="film_label">Кремневая долина</div>
                     </div>
 
                     <div class="film_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
                         <img src="assets/img/dead.png" alt="Ходячие мертвецы">
+
                         <div class="film_label">Ходячие мертвецы</div>
                     </div>
 
                     <div class="film_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
                         <img src="assets/img/breakingbad.png" alt="Во все тяжкие">
+
                         <div class="film_label">Во все тяжкие</div>
                     </div>
 
                 </div>
+
+
+                <a href="#"><h3>Как снималь Интерстеллар</h3></a>
+                <hr>
+                <p>Сказка — удивительное творение человеческого гения, она возвышает человека, радует его, дает веру в
+                    свои силы, в будущее, увлекает достижимостью того, что кажется вроде бы совершенно невозможным..</p>
+                <a href="#" class="btn btn-warning pull-right">Читать</a>
+
+                <div class="margin-8"></div>
+
+                <a href="#"><h3>Как снималь Интерстеллар</h3></a>
+                <hr>
+                <p>Сказка — удивительное творение человеческого гения, она возвышает человека, радует его, дает веру в
+                    свои силы, в будущее, увлекает достижимостью того, что кажется вроде бы совершенно невозможным..</p>
+                <a href="#" class="btn btn-warning pull-right">Читать</a>
+
+                <div class="margin-8 clear"></div>
 
 
             </div>
@@ -144,7 +183,94 @@
             <!--left block-->
             <div class="col-lg-3 col-lg-pull-9">
 
-                left block
+                <div class="panel panel-info hidden-xs">
+                    <div class="panel-heading">
+                        <div class="sidebar-header">Поиск</div>
+                    </div>
+                    <div class="panel-body">
+                        <form role="search">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <input type="search" class="form-control input-lg" placeholder="Ваш запрос">
+
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-default btn-lg" type="submit"><i
+                                                class="glyphicon glyphicon-search"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <div class="sidebar-header">Вход</div>
+                    </div>
+                    <div class="panel-body">
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="text" class="form-control input-lg" placeholder="Логин">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control input-lg" placeholder="Пароль">
+                            </div>
+                            <button type="submit" class="btn btn-warning pull-right">Вход</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <div class="sidebar-header">Новости</div>
+                    </div>
+                    <div class="panel-body">
+                        <p>07.07.2016</p>
+                        <p>Мы запустили новый сервис</p>
+                    </div>
+                </div>
+
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <div class="sidebar-header">Рейтинг фильмов</div>
+                    </div>
+                    <div class="panel-body">
+                        <ul class="list-group">
+                            <li class="list-group-item list-group-item-warning">
+                                <span class="badge">8.9</span>
+                                <a href="#">Интерстеллар</a>
+                            </li>
+                            <li class="list-group-item list-group-item-warning">
+                                <span class="badge">8.9</span>
+                                <a href="#">Интерстеллар</a>
+                            </li>
+                            <li class="list-group-item list-group-item-warning">
+                                <span class="badge">8.9</span>
+                                <a href="#">Интерстеллар</a>
+                            </li>
+                            <li class="list-group-item list-group-item-warning">
+                                <span class="badge">8.9</span>
+                                <a href="#">Интерстеллар</a>
+                            </li>
+                            <li class="list-group-item list-group-item-warning">
+                                <span class="badge">8.9</span>
+                                <a href="#">Интерстеллар</a>
+                            </li>
+                            <li class="list-group-item list-group-item-warning">
+                                <span class="badge">8.9</span>
+                                <a href="#">Интерстеллар</a>
+                            </li>
+                            <li class="list-group-item list-group-item-warning">
+                                <span class="badge">8.9</span>
+                                <a href="#">Интерстеллар</a>
+                            </li>
+                            <li class="list-group-item list-group-item-warning">
+                                <span class="badge">8.9</span>
+                                <a href="#">Интерстеллар</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
 
             </div>
 

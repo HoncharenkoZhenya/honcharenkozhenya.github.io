@@ -32,6 +32,7 @@
 
 .navbar-inverse {
     padding: 1%;
+    border-radius: 0;
 }
 
 @media (max-width: 767px) {
@@ -59,7 +60,7 @@
     min-height: 100%;
 }
 
-html, body {
+body {
     height: 100% ;
 }
 
@@ -81,6 +82,39 @@ footer a:hover {
 
 .film_block {
     text-align: center;
+}
+
+.panel {
+    border: none;
+}
+.panel-body{
+    background-color: #f9f9f9;
+}
+.panel-info>.panel-heading {
+    background-color: #f0ad4e;
+    color: white;
+    border-color: transparent;
+}
+
+.sidebar-header {
+    font-size: 120%;
+    letter-spacing: 2px;
+}
+
+.form-control {
+    font-size: 14px;
+    border-radius: 0;
+}
+
+.list-group-item-warning {
+    color: #8a6d3b;
+    background-color: #f9f9f9;
+}
+.badge {
+    background-color: black;
+}
+.input-lg {
+    font-size: 14px;
 }
 
 .film_block img {

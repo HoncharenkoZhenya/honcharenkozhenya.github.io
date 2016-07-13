@@ -1,0 +1,242 @@
+.navbar {
+    border-radius: 0;
+}
+.wrapper {
+    padding-top: 50px;
+}
+.logo {
+    background-color: white;
+    padding-bottom: 5px;
+}
+body {
+    width: 100%;
+    padding-top: 25px;
+    background: url("../img/background.png") 50% 20%;
+}
+.nav-pills>li>a {
+    color: white;
+    border-radius: 0;
+}
+
+
+.nav-pills>li {
+    border-radius: 4px;
+    color: white;
+    border-radius: 0;
+    transition: border-bottom 0.3s linear;
+    padding-bottom: 15px;
+}
+
+.navbar-default {
+    background-color: black;
+    border-color: transparent;
+    padding-top: 14px;
+    height: 75px;
+}
+.btn-default:hover {
+    color: white;
+    background-color: red;
+    border-color: transparent;
+}
+
+.contacts p {
+    display: inline-block;
+}
+
+.contacts {
+    text-align: right;
+    margin-bottom: 15px;
+}
+.benefits{
+    position: relative;
+}
+.benefit {
+    height: 150px;
+    padding: 35px;
+    text-align: center;
+    font-weight: 700;
+    display: inline-block;
+}
+.benefit1 {
+    border-right: 1px dashed red;
+    border-bottom: 1px dashed red;
+}
+
+.benefit4 {
+    border-left: 1px dashed red;
+    border-top: 1px dashed red;
+}
+
+.btn-group-lg > .btn, .btn-lg {
+    padding: 10px 30px;
+    font-size: 16px;
+    border-radius: 0;
+}
+
+.arrow {
+    margin-left: 50px;
+    color: gray;
+}
+
+.btn-default {
+    background-color: white;
+    border-color: white;
+    height: 70px;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.btn-default:hover .arrow {
+    color: white;
+}
+.text {
+    padding-right: 20px;
+}
+.text h2 {
+    font-size: 55px;
+    font-weight: 700;
+    margin-bottom: -25px;
+    text-transform: uppercase;
+}
+.text h3 {
+    font-size: 60px;
+    color: red;
+    margin-bottom: 30px;
+}
+.text p {
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+.header .logo {
+    margin-bottom: 50px;
+}
+
+@media (max-width: 767px) {
+    body {
+        text-align: center;
+        padding-top: 72px;
+        background-image: none;
+    }
+    .wrapper {
+        padding-top: 50px;
+        background: url("../img/backgroundMobile.png") no-repeat;
+        background-size: cover;
+    }
+    .header .logo {
+        margin-bottom: 100px;
+    }
+    .navbar-default {
+        padding-top: 0;
+        height: auto;
+        background-color: white;
+        border-color: white;
+    }
+
+    .navbar-default .navbar-toggle {
+        border-color: white;
+    }
+
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: red;
+    }
+
+    .logo {
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    .nav-pills > li {
+        float: none;
+        text-align: center;
+    }
+
+    .nav-pills li a {
+        color: white;
+    }
+
+    .nav > li > a:hover {
+        text-decoration: none;
+        background-color: red;
+    }
+
+    .navbar-collapse {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+        border-color: inherit;
+    }
+    .contacts {
+        text-align: center;
+        display: block;
+    }
+    .contacts p {
+        display: block;
+    }
+
+    .nav-pills > li > a {
+        border-radius: 0;
+        padding: 20px 0;
+    }
+
+    .menu {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+        background-color: black;
+    }
+    .text {
+        margin-bottom: 150px;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .logo {
+        text-align: center;
+        margin-bottom: 5px;
+        background-color: transparent;
+    }
+    body {
+        text-align: center;
+    }
+    .contacts {
+        margin-top: 30px;
+        text-align: center;
+    }
+    .contacts p {
+        display: block;
+    }
+    .text {
+        margin-bottom: 150px;
+    }
+    .nav-pills>li:hover {
+        border-bottom: 4px solid red;
+        background-color: transparent;
+    }
+    .nav-pills>li>a:hover {
+        background-color: transparent;
+    }
+}
+@media (min-width: 991px) {
+    .menu:before {
+        content: "";
+        width: 40px;
+        height: 75px;
+        position: absolute;
+        left: -25px;
+        background: linear-gradient(291deg, black 42.34%, white 42.34%);
+    }
+    .nav-pills>li:hover {
+        border-bottom: 4px solid red;
+        background-color: transparent;
+    }
+    .nav-pills>li>a:hover {
+        background-color: transparent;
+    }
+}
