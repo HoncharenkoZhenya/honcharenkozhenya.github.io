@@ -120,7 +120,7 @@ footer a:hover {
 .film_block img {
     margin-bottom: 5%;
     border-radius: 5px;
-    border: solid 5x #dad7d5;
+    border: solid 5px #dad7d5;
     width: 100%;
 }
 
@@ -131,4 +131,24 @@ footer a:hover {
 
 .margin-8 {
     margin-top: 8%;
+}
+
+.info-block {
+    font-size: 120%;
+}
+
+.info-block .badge {
+    font-size: 80%;
+}
+
+.info-block span {
+    margin-right: 3%;
+}
+
+textarea.form-control {
+    height: 200px;
+}
+
+.table tbody>tr>td.vert-align {
+    vertical-align: middle;
 }

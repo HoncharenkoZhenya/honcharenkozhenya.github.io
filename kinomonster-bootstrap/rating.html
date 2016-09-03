@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Киномонстр Bootstrap</title>
+    <title>Рейтинг фильмы Bootstrap</title>
 
     <!-- Bootstrap -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -20,8 +20,6 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-
-<!--Footer-->
 <div class="container-fluid">
     <div class="row">
 
@@ -37,7 +35,7 @@
                             <div class="col-lg-12">
                                 <h1><a href="#">КиноМонстр</a></h1>
 
-                            <p>Кино - наша страсть!</p>
+                                <p>Кино - наша страсть!</p>
                             </div>
 
                         </div>
@@ -58,10 +56,10 @@
                 <div id="navbarCollapse" class="collapse navbar-collapse navbar-right">
 
                     <ul class="nav nav-pills">
-                        <li class="active"><a href="index.html">Главная</a></li>
+                        <li><a href="index.html">Главная</a></li>
                         <li><a href="films.html">Фильмы</a></li>
                         <li><a href="#">Сериалы</a></li>
-                        <li><a href="rating.html">Рейтинг фильмов</a></li>
+                        <li class="active"><a href="rating.html">Рейтинг фильмов</a></li>
                         <li><a href="contacts.html">Контакты</a></li>
                     </ul>
 
@@ -81,8 +79,6 @@
         <div class="row">
             <!--right block-->
             <div class="col-lg-9 col-lg-push-3">
-
-
                 <form role="search" class="visible-xs">
                     <div class="form-group">
                         <div class="input-group">
@@ -96,87 +92,46 @@
                     </div>
                 </form>
 
-                <h2>Новые фильмы</h2>
+                <h1>Рейтинг фильмов</h1>
                 <hr>
 
-                <div class="row">
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th></th>
+                        <th>Фильм</th>
+                        <th class="text-center">Год</th>
+                        <th class="text-center">Рейтинг</th>
+                    </tr>
+                    </thead>
 
-                    <div class="film_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
-                        <img src="assets/img/inter.png" alt="Интерстеллар">
-
-                        <div class="film_label">Интерстеллар</div>
-                    </div>
-
-                    <div class="film_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
-                        <img src="assets/img/matrix.png" alt="Матрица">
-
-                        <div class="film_label">Матрица</div>
-                    </div>
-
-                    <div class="film_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
-                        <img src="assets/img/cloud.png" alt="Облачный атлас">
-
-                        <div class="film_label">Облачный атлас</div>
-                    </div>
-
-                    <div class="film_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
-                        <img src="assets/img/max.png" alt="Безумный Макс">
-
-                        <div class="film_label">Безумный Макс</div>
-                    </div>
-
-                </div>
-
-                <div class="margin-8"></div>
-
-                <h2>Новые сериалы</h2>
-                <hr>
-
-                <div class="row">
-
-                    <div class="film_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
-                        <img src="assets/img/xfiles.png" alt="Секретные материалы">
-
-                        <div class="film_label">Секретные материалы</div>
-                    </div>
-
-                    <div class="film_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
-                        <img src="assets/img/silicon.png" alt="Кремневая долина">
-
-                        <div class="film_label">Кремневая долина</div>
-                    </div>
-
-                    <div class="film_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
-                        <img src="assets/img/dead.png" alt="Ходячие мертвецы">
-
-                        <div class="film_label">Ходячие мертвецы</div>
-                    </div>
-
-                    <div class="film_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
-                        <img src="assets/img/breakingbad.png" alt="Во все тяжкие">
-
-                        <div class="film_label">Во все тяжкие</div>
-                    </div>
-
-                </div>
-
-
-                <a href="#"><h3>Как снималь Интерстеллар</h3></a>
-                <hr>
-                <p>Сказка — удивительное творение человеческого гения, она возвышает человека, радует его, дает веру в
-                    свои силы, в будущее, увлекает достижимостью того, что кажется вроде бы совершенно невозможным..</p>
-                <a href="#" class="btn btn-warning pull-right">Читать</a>
-
-                <div class="margin-8"></div>
-
-                <a href="#"><h3>Как снималь Интерстеллар</h3></a>
-                <hr>
-                <p>Сказка — удивительное творение человеческого гения, она возвышает человека, радует его, дает веру в
-                    свои силы, в будущее, увлекает достижимостью того, что кажется вроде бы совершенно невозможным..</p>
-                <a href="#" class="btn btn-warning pull-right">Читать</a>
-
-                <div class="margin-8 clear"></div>
-
+                    <tbody>
+                    <tr>
+                        <td class="col-lg-1 col-md-1 col-xs-2"><img class="img-responsive img-thumbnail" src="assets/img/inter.png" alt="Интерстеллар"></td>
+                        <td class="vert-align"><a href="show.html">Интерстеллар</a></td>
+                        <td class="text-center vert-align">2014</td>
+                        <td class="text-center vert-align"><span class="badge">8.1</span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-lg-1 col-md-1 col-xs-2"><img class="img-responsive img-thumbnail" src="assets/img/cloud.png" alt="Облачный атлас"></td>
+                        <td class="vert-align"><a href="#">Облачный атлас</a></td>
+                        <td class="text-center vert-align">2012</td>
+                        <td class="text-center vert-align"><span class="badge">7.9</span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-lg-1 col-md-1 col-xs-2"><img class="img-responsive img-thumbnail" src="assets/img/matrix.png" alt="Матрица"></td>
+                        <td class="vert-align"><a href="#">Матрица</a></td>
+                        <td class="text-center vert-align">1999</td>
+                        <td class="text-center vert-align"><span class="badge">8.3</span></td>
+                    </tr>
+                    <tr>
+                        <td class="col-lg-1 col-md-1 col-xs-2"><img class="img-responsive img-thumbnail" src="assets/img/max.png" alt="Безумный Макс"></td>
+                        <td class="vert-align"><a href="#">Безумный Макс</a></td>
+                        <td class="text-center vert-align">2015</td>
+                        <td class="text-center vert-align"><span class="badge">7.7</span></td>
+                    </tr>
+                    </tbody>
+                </table>
 
             </div>
 
@@ -226,6 +181,7 @@
                     </div>
                     <div class="panel-body">
                         <p>07.07.2016</p>
+
                         <p>Мы запустили новый сервис</p>
                     </div>
                 </div>
@@ -279,10 +235,7 @@
 
     </div>
 
-    <div class="clear">
-
-
-    </div>
+    <div class="clear"></div>
 
 </div>
 
