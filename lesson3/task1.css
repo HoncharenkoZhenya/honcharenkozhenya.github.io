@@ -5,13 +5,14 @@ h1 {
 
 p:first-letter {
     font-size: 30px;
-    color: red;
+    colxor: red;
 }
 
 em {
     background-color: green;
     color: white;
 }
+
 
 #allotment h2 {
     color: orange;
