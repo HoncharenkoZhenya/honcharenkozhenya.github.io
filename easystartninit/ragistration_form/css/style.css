@@ -1,0 +1,137 @@
+body {
+	background-color: #e8e8e8;
+	font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  min-width: 840px;
+}
+.row {
+	width: 841px;
+	margin: 30px auto;
+	background-color: #fff;
+	border-top: 2px solid #e62b1e;
+  border-bottom: 2px solid #bcbcbc;
+  text-align: center;
+}
+.col {
+	text-align: left;
+	width: 420px;
+	float: right;
+}
+.right {
+	border-left: 1px solid #cfcfcf;
+}
+.registration {
+	height: 300px;
+	background-color: #f3f3f3;
+	padding-top: 40px;
+}
+form>div {
+	width: 300px;
+	margin: 0 auto 20px auto;
+}
+
+.btn {
+	display: block;
+	width: 300px;
+	height: 40px;
+	margin: 0 auto;
+	font-weight: bold;
+	margin-bottom: 20px;
+	border: 0;
+	border-radius: 3px;
+	color: #FFF;
+	cursor: pointer;
+	text-align: center;
+  padding: 0 15px;
+}
+.btn img {
+	float: left;
+}
+.facebook {
+  background-color: #3B5998;
+}
+.facebook:hover {
+	background-color: #385388;
+}
+.google {
+  background-color: #dd5342;
+}
+.google:hover {
+	background-color: #cd4c3c;
+}
+
+
+#password,
+#login {
+	width: 280px;
+	height: 40px;
+	font-size: 20px;
+	margin: 3px 0 3px 0;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 0 10px 0 10px;
+}
+#remember {
+	float: left;
+	margin-right: 10px;
+}
+form button {
+	display: block;
+	width: 100px;
+	height: 40px;
+	margin: 0 auto;
+	font-weight: bold;
+	margin-bottom: 20px;
+	border: 0;
+	border-radius: 3px;
+	color: #FFF;
+	background-color: #252525;
+	cursor: pointer;
+	text-align: center;
+	float: left;
+}
+form button:hover {
+	background-color: #666666;
+}
+form a {
+	float: right;
+	color: #5a5a5a;
+	padding-top: 5px;
+	font-size: 0.8em;
+	font-weight: bold;
+}
+p {
+	color: #666666;
+}
+p a {
+	color: #000000;
+	font-weight: bold;
+}
+
+@media (max-width: 870px) {
+
+	body {
+		min-width: 480px;
+	}
+	.row {
+		width: 480px;
+		margin: 0 auto;
+	}
+	.col {
+		float: none;
+		margin: 0 auto;
+	}
+	.registration {
+		height: 430px;
+	}
+	.right {
+		border: none;
+	}
+	.left {
+		border-top: 1px solid #cfcfcf;
+		margin-top: 80px;
+		padding-top: 25px;
+		width: 300px;
+	}
+
+}
