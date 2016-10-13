@@ -107,7 +107,7 @@ p a {
 	font-weight: bold;
 }
 
-@media (max-width: 870px) {
+@media (max-width: 870px) or (only screen and (max-device-width : 1080px)) {
 
 	body {
 		min-width: 480px;
@@ -133,26 +133,4 @@ p a {
 		width: 300px;
 	}
 
-}
-@media only screen and (max-device-width : 1080px) {
-/* Styles */
-	.row {
-		width: 100%;
-	}
-	.col {
-		float: none;
-		margin: 0 auto;
-	}
-	.registration {
-		height: 430px;
-	}
-	.right {
-		border: none;
-	}
-	.left {
-		border-top: 1px solid #cfcfcf;
-		margin-top: 80px;
-		padding-top: 25px;
-		width: 300px;
-	}
 }
