@@ -134,7 +134,7 @@ p a {
 	}
 
 }
-@media screen {
+@media only screen and (max-width : 320px) {
 	body {
 		background-color: #red;
 	}
