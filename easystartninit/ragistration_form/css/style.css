@@ -137,7 +137,23 @@ p a {
 }
 @media only screen and (max-device-width : 1080px) {
 /* Styles */
-	body {
-		background-color: red;
+	.row {
+		width: 100%;
+	}
+	.col {
+		float: none;
+		margin: 0 auto;
+	}
+	.registration {
+		height: 430px;
+	}
+	.right {
+		border: none;
+	}
+	.left {
+		border-top: 1px solid #cfcfcf;
+		margin-top: 80px;
+		padding-top: 25px;
+		width: 300px;
 	}
 }
