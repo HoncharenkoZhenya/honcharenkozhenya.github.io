@@ -107,7 +107,7 @@ p a {
 	font-weight: bold;
 }
 
-@media (max-width: 870px) or only screen and (max-device-width : 1080px) {
+@media (max-width: 870px) and (max-device-width : 1080px) {
 
 	body {
 		min-width: 480px;
