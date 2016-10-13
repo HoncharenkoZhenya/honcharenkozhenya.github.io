@@ -45,14 +45,6 @@ form>div {
   padding: 0 15px;
   transition: all 0.5s;
 }
-
-.btn:hover {
-	-webkit-transform: scale(1.2);
-	-moz-transform: scale(1.2);
-	-ms-transform: scale(1.2);
-	-o-transform: scale(1.2);
-	transform: scale(1.2);
-}
 .btn img {
 	float: left;
 }
@@ -105,6 +97,11 @@ p {
 p a {
 	color: #000000;
 	font-weight: bold;
+}
+input:required:valid {
+	background: #fff url(../img/valid.png) no-repeat 97% center;
+	box-shadow: 0 0 5px #5cd053;
+	border-color: #28921f;
 }
 
 @media (max-width: 870px),
