@@ -1,6 +1,6 @@
 body {
 	background-color: #e8e8e8;
-	background-color: blue;
+	background-color: green;
 	font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
   min-width: 840px;
@@ -135,9 +135,7 @@ p a {
 	}
 
 }
-@media only screen
-and (min-device-width : 1080px)
-and (max-device-width : 1080px) {
+@media only screen and (max-device-width : 1080px) {
 /* Styles */
 	body {
 		background-color: red;
