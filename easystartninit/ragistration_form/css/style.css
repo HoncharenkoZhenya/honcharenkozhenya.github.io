@@ -56,11 +56,11 @@ h2 {
 }
 .right {
 	border-left: 1px solid #cfcfcf;
-	padding: 0 60px 0 59px;
+	padding-left: 59px;
 }
 .registration {
 	background-color: #f3f3f3;
-	padding: 40px 0;
+	padding: 4% 0;
 	overflow: hidden;
 }
 
@@ -152,7 +152,7 @@ p {
 	font-size: 18px;
 	font-weight: normal;
 	margin: 34px 0 0 0;
-	padding-bottom: 40px;
+	padding-bottom: 4%;
 }
 p a {
 	color: #000000;
@@ -171,24 +171,23 @@ only screen and (max-device-width : 1080px) {
 		min-width: 480px;
 	}
 	.row {
-		width: 480px;
-		margin: 0 auto;
+		width: 420px;
+		margin: auto;
 	}
 	.col {
 		float: none;
-		margin: 0 auto;
+		width: 100%;
 	}
 	.registration {
-		height: 430px;
+		overflow: hidden;
 	}
 	.right {
 		border: none;
 	}
 	.left {
 		border-top: 1px solid #cfcfcf;
-		margin-top: 80px;
+		margin-top: 30px;
 		padding-top: 25px;
-		width: 300px;
 	}
 
 }
