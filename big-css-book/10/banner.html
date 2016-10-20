@@ -6,18 +6,16 @@
 <link href="styles.css" rel="stylesheet">
 <style>
 	nav a {
-		-webkit-transition: -webkit-transform .5,
-												background-color: 1s ease-in .5;
-		-moz-transition: -moz-transform .5,
-										 background-color: 1s ease-in .5;
-		-ms-transition: -ms-transform .5,
-										background-color: 1s ease-in .5;
-		-o-transition: -o-transform .5,
-										background-color: 1s ease-in .5;
-		transition: transform .5,
-								background-color: 1s ease-in .5;
-
-
+		-webkit-transition: -webkit-transform .5s,
+												background-color 1s ease-in .5s;
+		-moz-transition: -moz-transform .5s,
+										 background-color 1s ease-in .5s;
+		-ms-transition: -ms-transform .5s,
+										background-color 1s ease-in .5s;
+		-o-transition: -o-transform .5s,
+										background-color 1s ease-in .5s;
+		transition: transform .5s,
+								background-color 1s ease-in .5s;
 	}
 	nav a:hover {
 		background-color: #f00;
@@ -26,8 +24,26 @@
 		-ms-transform: scale(1.2);
 		-o-transform: scale(1.2);
 		transform: scale(1.2);
-
 	}
+
+	@-moz-keyframes logo {
+		from {
+			transform: rotate(0) scale(.5);
+			left: 120%;
+		}
+		50% {
+			transform: rotate(-720deg) scale(.5);
+			left: 0;
+		}
+		to {
+			transform: rotate(0) scale(1);
+		}
+	}
+
+	.logo {
+		animation: logo 3s;
+	}
+
 </style>
 <!--[if lt IE 9]>
 <script src="html5shiv.js"></script>

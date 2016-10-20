@@ -1,0 +1,23 @@
+body {
+	width: 60%;
+	margin: 0 auto;
+}
+.main-content {
+	overflow: hidden;
+}
+.col-right {
+	background-color: green;
+}
+.col-left {
+	float: left;
+	width: 30%;
+	background-color: red;
+}
+.header {
+	text-align: center;
+	background-color: blue;
+}
+.footer {
+	text-align: center;
+	background-color: blue;
+}

@@ -127,6 +127,34 @@ h2 {
 [type="checkbox"] {
 	margin-right: 7px;
 	float: left;
+	visibility: hidden;
+}
+[for="remember"] {
+	position: relative;
+	cursor: pointer;
+}
+[for="remember"]:before {
+	content: '';
+	background-color: #3b99fc;
+	border-radius: 2px;
+	width: 12px;
+	height: 12px;
+	position: absolute;
+	top: 2px;
+	left: -20px;
+}
+[for="remember"]:after {
+	content: '';
+}
+
+
+[type="checkbox"]:checked ~ [for="remember"]:after {
+	content: '✓';
+	color: #fff;
+	font-size: 11px;
+	position: absolute;
+	top: 0;
+	left: -18px;
 }
 .submit {
 	overflow: hidden;
