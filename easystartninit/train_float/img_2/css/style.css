@@ -8,6 +8,7 @@ body {
 .col-middle {
 	background-color: green;
 	text-align: justify;
+	overflow: hidden;
 }
 .col-left {
 	float: left;

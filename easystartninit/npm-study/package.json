@@ -1,0 +1,17 @@
+{
+  "name": "npm-study",
+  "version": "1.0.0",
+  "description": "my first npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cool"
+  ],
+  "author": "me",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
