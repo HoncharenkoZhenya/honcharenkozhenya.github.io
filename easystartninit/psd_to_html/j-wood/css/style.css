@@ -19,7 +19,6 @@
 			transform: rotate(0) scale(1);
 		}
 	}
-
 	.logo {
 		animation: logo 1.5s;
 	}
@@ -71,9 +70,6 @@
 }
 .nav__item:hover {
 	transform: scale(1.2);
-}
-.nav__link:hover {
-	color: red;
 }
 
 .img-logo {
