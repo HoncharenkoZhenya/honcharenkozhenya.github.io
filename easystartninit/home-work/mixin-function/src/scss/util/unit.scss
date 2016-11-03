@@ -1,0 +1,11 @@
+@function px-to-rem ($pixels:16,$em-value:16) {
+  @return ($pixels/16)*1rem;
+}
+
+
+
+@for $i from 1 through 12 {
+  .#{$class-name}-#{$i} {
+    width: $i*80px;
+	}
+}
