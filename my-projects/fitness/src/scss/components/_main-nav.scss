@@ -1,0 +1,20 @@
+.main-nav {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: flex-end;
+	padding-right: 70px;
+}
+
+.main-nav__item {
+	list-style: none;
+	padding: 0 0 0 65px;
+
+	a {
+		text-decoration: none;
+		color: $text-color-white;
+		font-size: 13px;
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+
+}

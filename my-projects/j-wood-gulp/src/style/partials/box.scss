@@ -1,0 +1,33 @@
+.box {
+	height: 100vh;
+	padding: 0 3.5%;
+	font-size: 3vmin;
+	position: relative;
+	text-align: center;
+	font-family: NexaLight;
+	background-size: cover;
+}
+
+.box--home {
+	background-image: url(../../img/background_home.jpg);
+}
+
+.box--portfolio {
+	background-image: url(../../img/background-portfolio.jpg);
+}
+
+.box__footer {
+	border-top: 1px solid #bebebe;
+	height: 9.26vh;
+	position: absolute;
+	width: 93%;
+	bottom: 0;
+
+	p {
+		font-family: NexaLight;
+		font-size: 0.75em;
+		text-transform: uppercase;
+		color: #bebebe;
+	}
+}
+
