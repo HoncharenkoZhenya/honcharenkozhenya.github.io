@@ -1,5 +1,11 @@
 .slogan {
 	position: absolute;
-	bottom: 16.5vh;
-	left: ;
+	left: 120px;
+	bottom: 146px;
+	.green-slash {
+		color: $text-color-green;
+	}
+	.red-slash {
+		color: $text-color-red;
+	}
 }

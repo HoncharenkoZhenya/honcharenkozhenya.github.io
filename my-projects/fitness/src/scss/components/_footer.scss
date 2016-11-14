@@ -1,0 +1,98 @@
+.footer {
+	background-color: $text-color-black;
+	padding: 180px 0 395px 0;
+}
+.footer__row {
+	overflow: hidden;
+
+	h3 {
+		font-size: 15px;
+		color: $text-color-white;
+	}
+
+	p {
+		font-size: 14px;
+		color: $text-color-dar-gray;
+	}
+
+	.icon {
+		font-size: 40px;
+		margin: 0 5px 0 0;
+		position: relative;
+		z-index: 1;
+	}
+	.icon:after {
+		content: ' ';
+		background-color: #fff;
+		display: inline-block;
+		position: absolute;
+		width: 30px;
+		height: 25px;
+		left: 5px;
+		top: 9px;
+		z-index: -1;
+	}
+	.icon-facebook {
+		color: #2e3192;
+	}
+	.icon-twitter {
+		color: #00aeef;
+	}
+	.icon-play-button-silhouette {
+		color: #ed3123;
+	}
+	.icon-linkedin-button {
+		color: #171a8f;
+	}
+}
+.footer--left {
+	float: left;
+	width: 375px;
+	padding-right: 50px;
+}
+.footer--center {
+	float: left;
+	width: 450px;
+	padding-right: 38px;
+}
+.footer--right {
+	float: left;
+	width: 250px;
+}
+.footer__social {
+	a {
+		text-decoration: none;
+	}
+}
+.footer__form {
+	float: right;
+	padding-top: 20px;
+	input {
+		display: inline-block;
+		height: 50px;
+		margin: 0;
+		padding: 0;
+		border-radius: 3px;
+		border: none;
+		padding-left: 25px;
+	}
+	[type="text"] {
+		width: 200px;
+	}
+	[type="mail"] {
+		width: 340px;
+	}
+	.btn {
+		display: inline-block;
+		width: 180px;
+		height: 50px;
+		line-height: 50px;
+		text-align: center;
+		text-decoration: none;
+		color: $text-color-white;
+		margin: 0;
+		padding: 0;
+		background-color: $text-color-green;
+		border-radius: 3px;
+	}
+}
