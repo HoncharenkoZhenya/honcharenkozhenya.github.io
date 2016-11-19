@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'PantonBlack';
+	src: url('../fonts/PantonBlack.eot');
+	src: local('☺'), url('../fonts/PantonBlack.woff') format('woff'), url('../fonts/PantonBlack.ttf') format('truetype'), url('../fonts/PantonBlack.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+

@@ -1,0 +1,70 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 40px 0 85px;
+}
+
+.header__logo {
+	width: 15%;
+	padding: 0;
+	margin: 0;
+	@media (max-width: 940px) {
+		width: 40%;
+	}
+
+	img {
+		max-width: 100%;
+		max-height: 100%;
+	}
+}
+
+.header__nav {
+	width: 63%;
+	margin: 0 1%;
+	position: relative;
+	@media (max-width: 940px) {
+		width: 0;
+	}
+}
+
+.header__call-me {
+	width: 20%;
+
+	@media (max-width: 940px) {
+		width: 40%;
+		padding-right: 50px;
+	}
+}
+
+.call-me__number {
+	a {
+		text-decoration: none;
+		color: #fefefe;
+		font-size: 18px;
+	}
+}
+
+.call-me__btn {
+	cursor: pointer;
+	background-color: #fff;
+	color: #454141;
+	width: 100%;
+	font-weight: 400;
+	margin-top: 3px;
+	border-radius: 40px;
+	border: none;
+	box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.20);
+	display: inline-block;
+	font-size: 12px;
+	height: 38px;
+	line-height: 38px;
+	padding: 0 30px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.call-me__btn:hover {
+	color: #454141;
+	text-decoration: none;
+	box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.20);
+}

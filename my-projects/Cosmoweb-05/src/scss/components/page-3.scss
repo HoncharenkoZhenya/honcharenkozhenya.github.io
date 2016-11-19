@@ -1,0 +1,43 @@
+.page-3 {
+	text-align: center;
+	padding-top: 140px;
+	position: relative;
+
+	h2 {
+		font-size: 36px;
+		text-transform: uppercase;
+		font-family: 'PantonBlack';
+	}
+
+	h3 {
+		font-size: 24px;
+	}
+
+	p {
+		font-size: 18px;
+
+		.page-3--red-price {
+			font-family: 'PantonBlack';
+			color: #e9066b;
+			font-size: 30px;
+		}
+
+		.page-3--green-price {
+			font-family: 'PantonBlack';
+			color: #61c25e;
+			font-size: 30px;
+		}
+	}
+
+	&:after {
+		content: '';
+		background: url(../img/footer-bg.png) center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 120px;
+	}
+}

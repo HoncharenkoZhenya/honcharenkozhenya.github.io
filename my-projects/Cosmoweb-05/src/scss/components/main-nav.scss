@@ -1,0 +1,45 @@
+.main-nav {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	text-align: center;
+
+	@media (max-width: 940px) {
+		display: none;
+	}
+}
+
+.main-nav__item {
+	white-space: nowrap;
+	display: inline-block;
+	position: relative;
+	padding: 25px 10px 25px;
+
+	a {
+		color: #fefefe;
+		font-size: 12px;
+		letter-spacing: 0.05em;
+		text-transform: uppercase;
+		position: relative;
+
+		&:after {
+			content: '';
+	    background: #ffffff;
+		  bottom: -25px;
+		  left: 0;
+		  position: absolute;
+		  height: 8px;
+		  width: 0;
+		  transition: all .2s;
+		}
+
+		&:hover {
+			text-decoration: none;
+		}
+		&:hover:after {
+			text-decoration: none;
+	    width: 100%;
+		}
+	}
+}
+

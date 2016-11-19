@@ -1,0 +1,14 @@
+*{
+	box-sizing: border-box;
+}
+.container {
+	width: 1180px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.container--info {
+	display: flex;
+	padding: 110px 0;
+	justify-content: space-between;
+	position: relative;
+}

@@ -1,0 +1,8 @@
+.container {
+	color: #454141;
+	font-family: 'Roboto', sans-serif;
+
+	@media (min-width: 940px) {
+		width: 940px;
+	}
+}

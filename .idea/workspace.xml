@@ -20,7 +20,7 @@
     <favorites_list name="honcharenkozhenya.github.io" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -88,6 +88,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -96,25 +98,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="honcharenkozhenya.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="honcharenkozhenya.github.io" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/New Look - Womens, Mens &amp; Teen fashion Online.html" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/my-projects/o5test" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
@@ -207,11 +197,12 @@
       <workItem from="1475597091603" duration="594000" />
       <workItem from="1477834804946" duration="9000" />
       <workItem from="1478781582451" duration="155000" />
+      <workItem from="1479458567242" duration="373000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34372000" />
+    <option name="totallyTimeSpent" value="34745000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
@@ -256,14 +247,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/easystartninit/psd_to_html/j-wood-gulp/gulpfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/easystartninit/psd_to_html/j-wood-gulp/gulpfile.js" />
     <entry file="file://$PROJECT_DIR$/easystartin.it/index.html" />
     <entry file="file://$PROJECT_DIR$/easystartin.it/css/style.css" />
     <entry file="file://$PROJECT_DIR$/easystartin.it/index.html" />
@@ -302,13 +286,6 @@
     <entry file="file://$PROJECT_DIR$/easystartin.it/index.html" />
     <entry file="file://$PROJECT_DIR$/easystartin.it/css/style.css" />
     <entry file="file://$PROJECT_DIR$/еуые.html" />
-    <entry file="file://$PROJECT_DIR$/easystartninit/psd_to_html/j-wood-gulp/gulpfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/easystartninit/psd_to_html/j-wood-gulp/gulpfile.js" />
   </component>
 </project>

@@ -1,0 +1,42 @@
+.page-1 {
+	background-color: #f1f5f8;
+	background-image: url(../img/page-1-bg.png);
+	background-size: cover;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.page-1__content {
+	width: 555px;
+	position: relative;
+
+	h1 {
+		font-family: 'PantonBlack';
+		font-size: 45px;
+		line-height: 1.2em;
+		text-transform: uppercase;
+		color: #fefefe;
+		padding-bottom: 50px;
+	}
+
+	p {
+		font-size: 18px;
+		color: #fefefe;
+		padding-bottom: 40px;
+	}
+
+	select {
+		color: #fefefe;
+		font-weight: bold;
+	}
+
+	.mui-select {
+		width: 155px;
+	}
+}
+
+.page-1__bg {
+	position: absolute;
+	left: 100%;
+	top: 7px;
+}

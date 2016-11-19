@@ -1,0 +1,15 @@
+.collapse-nav {
+	cursor: pointer;
+	display: none;
+
+	@media (max-width: 940px) {
+		display: block;
+		position: fixed;
+		height: 30px;
+		width: 30px;
+		right: 20px;
+		top: 20px;
+		background-color: red;
+		z-index: 2;
+	}
+}

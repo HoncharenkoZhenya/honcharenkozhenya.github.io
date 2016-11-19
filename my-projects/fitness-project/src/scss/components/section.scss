@@ -1,0 +1,54 @@
+.section {
+	min-width: 1180px;
+}
+.section--main {
+	height: 100vh;
+	position: relative;
+	background: url(../img/background-main.jpg);
+	background-size: cover;
+	color: $text-color-white;
+
+	h1 {
+		font-size: 40px;
+		text-transform: uppercase;
+		margin: 0;
+		padding: 0;
+
+		&:after {
+			content: '/';
+			color: $text-color-green;
+		}
+	}
+
+	h2 {
+		font-size: 15px;
+		text-transform: uppercase;
+		margin: 0 0 0 180px;
+		letter-spacing: 2px;
+		padding: 0;
+
+		&:after {
+			content: '/';
+			color: $text-color-red;
+		}
+	}
+}
+.section--green {
+	background-color: $text-color-green;
+}
+.section--red {
+	background-color: $text-color-red;
+}
+.section--last {
+	background-image: url(../img/background-footer.jpg);
+	background-size: cover;
+	height: 695px;
+	text-align: center;
+	padding-top: 242px;
+	color: $text-color-white;
+	h2 {
+		margin: 0;
+		padding: 0;
+		font-size: 45px;
+	}
+}
