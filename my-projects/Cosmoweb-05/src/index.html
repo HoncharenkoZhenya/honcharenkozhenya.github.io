@@ -5,11 +5,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Cosmoweb</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<link href="//cdn.muicss.com/mui-0.9.4/css/mui.min.css" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<script src="//cdn.muicss.com/mui-0.9.4/js/mui.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
 
 	<link rel="stylesheet" href="css/main.css">
 </head>
@@ -19,7 +19,7 @@
 			<div class="row">
 				<header class="header">
 					<div class="header__logo">
-						<a href="#"><img src="../img/main-logo.png" alt=""></a>
+						<a href="#"><img src="img/main-logo.png" alt=""></a>
 					</div>
 
 					<nav class="header__nav">
@@ -44,6 +44,7 @@
 
 				<div class="page-1__content">
 					<h1>Лучшие возможности твоего города в одной карте</h1>
+					<img src="img/card_design_1.jpg" alt="" class="page-1__bg--litle">
 					<p>
 						Получайте до 30% скидки в сотнях магазинов и заведений
 						Вашего города с универсальной картой скидок о5рекомендует
@@ -55,12 +56,13 @@
 							<option value="value3">Макаров</option>
 						</select>
 					</div>
-					<img src="../img/heand-img.png" alt="" class="page-1__bg">
+					<img src="img/heand-img.png" alt="" class="page-1__bg">
 				</div>
+				<a href="#page-2" class="page-1__scroll"></a>
 			</div>
 		</div>
 	</section>
-	<section class="page-2">
+	<section class="page-2" id="page-2">
 		<div class="container">
 			<div class="row">
 				<h2>Как это <span>работает</span></h2>
@@ -78,47 +80,56 @@
 				<p>Единоразовый платеж за получение карты - <span class="page-3--red-price">1599 руб.</span></p>
 				<p>С промокодом - <span class="page-3--green-price">999 руб.</span></p>
 
-				<form action="" class="main-form">
+				<form action="" class="main-form" method="GET" id="jform">
 					<h2><span>Заказать</span> персональную карту<br>о5рекомендует</h2>
 
 					<div class="main-form__card-selection col-md-6">
-						<img src="../img/card_design_1.jpg" alt="" class="card-selection__title-img">
+						<img src="img/card_design_1.jpg" alt="" class="card-selection__title-img">
 						<div class="card-selection__variants">
 							<p>Выберите дизайн карты:</p>
 							<div class="card-selection__variant-img">
-								<img src="../img/card_design_1.jpg" alt="">
+								<label>
+									<input type="radio" name="card-design" value="1" checked>
+									<img src="img/card_design_1.jpg" alt="">
+								</label>
 							</div>
 							<div class="card-selection__variant-img">
-								<img src="../img/card_design_2.jpg" alt="">
+								<label>
+									<input type="radio" name="card-design" value="2">
+									<img src="img/card_design_2.jpg" alt="">
+								</label>
 							</div>
 							<div class="card-selection__variant-img">
-								<img src="../img/card_design_3.jpg" alt="">
+								<label>
+									<input type="radio" name="card-design" value="3">
+									<img src="img/card_design_3.jpg" alt="">
+								</label>
 							</div>
 						</div>
 					</div>
 
 					<div class="main-form__input col-md-6">
 						<div class="mui-textfield">
-							<input type="text" name="first-name" placeholder="Имя" required><i class="face-black"></i>
+							<input type="text" name="first-name" id="first-name" placeholder="Имя" required><i class="face-black"></i>
 						</div>
 						<div class="mui-textfield">
-							<input type="text" name="last-name" placeholder="Фамилия" required><i class="face-black"></i>
+							<input type="text" name="last-name" id="last-name" placeholder="Фамилия" required><i class="face-black"></i>
 						</div>
 						<div class="mui-textfield">
-							<input type="email" name="email" placeholder="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"><i class="mail"></i>
+							<input type="email" name="email" id="email" placeholder="Email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"><i class="mail"></i>
 						</div>
 						<div class="mui-textfield">
-							<input type="tel" name="tel" placeholder="Телефон" required pattern="+7[0-9]{10}"><i class="phone"></i>
+							<input type="tel" name="tel" id="tel" placeholder="Телефон" required pattern="+7[0-9]{10}"><i class="phone"></i>
 						</div>
 						<div class="mui-radio">
-							<input type="radio" name="sex" value="male" checked></i>Муж.
-							<input type="radio" name="sex" value="female"></i>Жен.
+							<input type="radio" name="gender" value="male" checked></i>Муж.
+							<input type="radio" name="gender" value="female"></i>Жен.
 						</div>
 						<div class="mui-textfield">
-							<input type="date" name="date" placeholder="Дата рождения" required pattern="[(0[1-9]|1[0-9]|2[0-9]|3[01]).(0[1-9]|1[012]).[0-9]{4}]"><i class="calendar"></i>
+							<input type="date" name="date" id="date" placeholder="Дата рождения" required pattern="[(0[1-9]|1[0-9]|2[0-9]|3[01]).(0[1-9]|1[012]).[0-9]{4}]"><i class="calendar"></i>
 						</div>
 						<div class="mui-textfield">
-							<input type="text" name="promo" placeholder="Промокод" required><i class="fingerprint"></i>
+							<input type="text" name="promo" id="promo" placeholder="Промокод" required><i class="fingerprint"></i>
 						</div>
 						<div class="mui-select">
 							<select name="pay" required>
@@ -140,5 +151,9 @@
 			</div>
 		</div>
 	</section>
+
+	<script>
+
+	</script>
 </body>
 </html>

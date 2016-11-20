@@ -33,6 +33,15 @@
 		color: #a19999;
 		font-size: 14px;
 	}
+
+	.mui-textfield,
+	.mui-select {
+		@media (max-width: 991px) {
+			width: 85%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
 }
 
 .main-form__input {
@@ -87,7 +96,9 @@
 		color: #e9066b;
 	}
 
-
+	@media (max-width: 991px) {
+		padding: 0;
+	}
 }
 
 .main-form__submit {
@@ -139,6 +150,10 @@
 
 	img {
 		width: 55px;
+	}
+
+	input {
+		display: none;
 	}
 }
 

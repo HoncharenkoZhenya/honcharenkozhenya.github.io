@@ -4,6 +4,7 @@
 	background-size: cover;
 	height: 100vh;
 	overflow: hidden;
+	position: relative;
 }
 
 .page-1__content {
@@ -33,10 +34,71 @@
 	.mui-select {
 		width: 155px;
 	}
+	@media (max-width: 940px) {
+		text-align: center;
+		width: 100%;
+		h1 {
+			font-size: 40px;
+			padding-bottom: 10px;
+		}
+		p {
+			padding-bottom: 20px;
+		}
+		.mui-select {
+			width: 80%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+
+	@media (max-width: 768px) {
+		h1 {
+			font-size: 35px;
+		}
+		p {
+			font-size: 14px;
+		}
+		.mui-select {
+			width: 90%;
+		}
+	}
 }
 
 .page-1__bg {
 	position: absolute;
 	left: 100%;
 	top: 7px;
+
+	@media (max-width: 940px) {
+		display: none;
+	}
+}
+.page-1__bg--litle {
+	display: none;
+	@media (max-width: 940px) {
+		display: block;
+		padding: 0;
+		margin: 0 auto;
+		border-radius: 5px;
+	}
+	@media (max-width: 768px) {
+		width: 60%;
+	}
+}
+
+.page-1__scroll:after {
+	content: '';
+	background: url(../img/scroll.png) no-repeat bottom center;
+	background-size: contain;
+	width: 13px;
+	height: 38px;
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	margin-right: 6.5px;
+	transition: all 0.2s;
+}
+
+.page-1__scroll:hover:after {
+	bottom: 12px;
 }

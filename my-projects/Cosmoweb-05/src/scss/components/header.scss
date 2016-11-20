@@ -3,6 +3,9 @@
 	justify-content: space-between;
 	align-items: center;
 	padding: 40px 0 85px;
+	@media (max-width: 940px) {
+		padding: 20px 0 40px;
+	}
 }
 
 .header__logo {
@@ -34,6 +37,12 @@
 	@media (max-width: 940px) {
 		width: 40%;
 		padding-right: 50px;
+	}
+	@media (max-width: 760px) {
+		width: 50%;
+	}
+	@media (max-width: 560px) {
+		width: 50%;
 	}
 }
 
