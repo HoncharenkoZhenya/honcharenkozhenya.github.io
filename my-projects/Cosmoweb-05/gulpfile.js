@@ -2,20 +2,22 @@ var gulp         = require('gulp'),
     watch        = require('gulp-watch'),
     prefixer     = require('gulp-autoprefixer'),
     sass         = require('gulp-sass'),
+    uglify       = require('gulp-uglify'),
     sourcemaps   = require('gulp-sourcemaps'),
     rigger       = require('gulp-rigger'),
     cssmin       = require('gulp-minify-css'),
     imagemin     = require('gulp-imagemin'),
     pngquant     = require('imagemin-pngquant'),
     browserSync  = require('browser-sync'),
-    iconfont = require("gulp-iconfont"),
-    consolidate = require("gulp-consolidate");
-    reload = browserSync.reload;
+    iconfont     = require("gulp-iconfont"),
+    consolidate  = require("gulp-consolidate");
+    reload       = browserSync.reload;
 
 var path = {
     build: {
         html: 'build/',
         css: 'build/css/',
+        js: 'build/js/',
         img: 'build/img/',
         fonts: 'build/fonts/'
     },
@@ -23,10 +25,12 @@ var path = {
         html: 'src/*.html',
         style: 'src/scss/main.scss',
         img: 'src/img/**/*.*',
+        js: 'src/js/main.js',
         fonts: 'src/fonts/**/*.*'
     },
     watch: {
         html: 'src/**/*.html',
+        js: 'src/js/**/*.js',
         style: 'src/scss/**/*.scss',
         img: 'src/img/**/*.*',
         fonts: 'src/fonts/**/*.*'
@@ -68,6 +72,16 @@ gulp.task('style:build', function () {
         .pipe(cssmin())
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(path.build.css))
+        .pipe(reload({stream: true}));
+});
+
+gulp.task('js:build', function () {
+    gulp.src(path.src.js)
+        .pipe(rigger())
+        .pipe(sourcemaps.init())
+        .pipe(uglify())
+        .pipe(sourcemaps.write())
+        .pipe(gulp.dest(path.build.js))
         .pipe(reload({stream: true}));
 });
 
@@ -114,7 +128,8 @@ gulp.task('build', [
     'html:build',
     'style:build',
     'fonts:build',
-    'image:build'
+    'image:build',
+    'js:build'
 ]);
 
 gulp.task('watch', function(){
