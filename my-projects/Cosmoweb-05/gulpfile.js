@@ -10,6 +10,7 @@ var gulp         = require('gulp'),
     pngquant     = require('imagemin-pngquant'),
     browserSync  = require('browser-sync'),
     iconfont     = require("gulp-iconfont"),
+    uncss        = require('gulp-uncss');
     consolidate  = require("gulp-consolidate");
     reload       = browserSync.reload;
 
@@ -73,6 +74,14 @@ gulp.task('style:build', function () {
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(path.build.css))
         .pipe(reload({stream: true}));
+});
+
+gulp.task('uncss', function () {
+    return gulp.src('build/css/main.css')
+        .pipe(uncss({
+            html: ['build/index.html']
+        }))
+        .pipe(gulp.dest('./build/css'));
 });
 
 gulp.task('js:build', function () {

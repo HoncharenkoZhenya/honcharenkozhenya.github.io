@@ -3,8 +3,11 @@
 	background-image: url(../img/page-1-bg.png);
 	background-size: cover;
 	height: 100vh;
-	overflow: hidden;
 	position: relative;
+
+	@media (max-width: 940px) {
+		height: auto;
+	}
 }
 
 .page-1__content {
