@@ -4,6 +4,7 @@
 	background-size: cover;
 	height: 100vh;
 	position: relative;
+	overflow: hidden;
 
 	@media (max-width: 940px) {
 		height: auto;
