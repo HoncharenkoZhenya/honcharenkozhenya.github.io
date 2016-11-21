@@ -2,7 +2,6 @@
 	background-color: #f1f5f8;
 	background-image: url(../img/page-1-bg.png);
 	background-size: cover;
-	height: 100vh;
 	position: relative;
 	overflow: hidden;
 
@@ -37,6 +36,7 @@
 
 	.mui-select {
 		width: 155px;
+		padding-bottom: 100px;
 	}
 	@media (max-width: 940px) {
 		text-align: center;
