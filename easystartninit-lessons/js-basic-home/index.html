@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Table</title>
+
+</head>
+<body>
+
+<script>
+	function sumOfDigits (num) {
+		nums = (num + '').split('');
+		var l = nums.length;
+		var sum = 0;
+		while (l--) {
+			sum += +nums[l];
+		}
+		sum += '';
+		var length = sum.length;
+		return {
+			value: sum+'',
+			length: length
+		}
+	}
+	console.log(sumOfDigits(100600));
+</script>
+</body>
+</html>

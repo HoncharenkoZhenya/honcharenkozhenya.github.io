@@ -14,6 +14,7 @@ function onClick1_1 () {
 		document.getElementById('answer1-1').innerHTML = res;
 	} else {
 		document.getElementById('answer1-1').innerHTML = 'Введите числа!!!';
+		
 	}
 }
 
