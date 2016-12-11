@@ -1,5 +1,6 @@
 .expedition__year {
-	float: left;
+	position: absolute;
+	left: 0;
 	width: auto;
 	font-family: 'Agavalanchec';
 	font-size: 10.02px;
@@ -15,29 +16,36 @@
 }
 
 .expedition__page-switch {
-	float: right;
 	width: auto;
 	font-family: 'Agavalanchec';
 	font-size: 10.02px;
 	letter-spacing: 3px;
-	pointer-events: none;
-	pointer-events: all;
+	position: absolute;
+	right: 0;
 
-	.switch-left:before {
-		content: '\e902';
-		font-family: 'icomoon';
-		font-size: 5px;
-		margin-right: 20px;
-		cursor: pointer;
-		vertical-align: middle;
+	.switch-left {
+		transition: all .3s;
+
+		&:before {
+			content: '\e902';
+			font-family: 'icomoon';
+			font-size: 5px;
+			margin-right: 20px;
+			cursor: pointer;
+			vertical-align: middle;
+		}
 	}
-	.switch-right:after {
-		content: '\e903';
-		font-family: 'icomoon';
-		font-size: 5px;
-		margin-left: 20px;
-		cursor: pointer;
-		vertical-align: middle;
+	.switch-right {
+		transition: all .3s;
+
+		&:after {
+			content: '\e903';
+			font-family: 'icomoon';
+			font-size: 5px;
+			margin-left: 20px;
+			cursor: pointer;
+			vertical-align: middle;
+		}
 	}
 }
 
