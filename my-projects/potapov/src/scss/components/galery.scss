@@ -1,0 +1,133 @@
+.galery {
+	margin-left: -4px;
+}
+.galery__tags {
+	float: left;
+	width: auto;
+	font-family: 'Agavalanchec';
+	font-weight: bold;
+	font-size: 10.02px;
+	letter-spacing: 3px;
+
+	&:after {
+		content: '\e901';
+		font-family: 'icomoon';
+		font-size: 5px;
+		vertical-align: middle;
+	}
+}
+
+.galery__rectangle {
+	float: right;
+	width: 9px;
+	height: 9px;
+	position: relative;
+	background-color: #d6dcdd;
+
+	&:before {
+		content: '';
+		width: 3px;
+		height: 3px;
+		position: absolute;
+		top: 3px;
+		left: 3px;
+		background-color: #fff;
+	}
+	&:after {
+
+	}
+}
+
+.galery__rectangle2 {
+	float: right;
+	width: 11px;
+	height: 9px;
+	position: relative;
+	background-color: #212121;
+	margin-left: 19px;
+
+	&:before {
+		content: '';
+		width: 3px;
+		height: 9px;
+		position: absolute;
+		left: 4px;
+		top: 0;
+		background-color: #fff;
+	}
+
+	&:after {
+		content: '';
+		width: 11px;
+		height: 3px;
+		position: absolute;
+		left: 0;
+		top: 3px;
+		background-color: #fff;
+	}
+}
+
+.galery__heading {
+	overflow: hidden;
+	font-family: 'Agfatumc';
+	font-size: 15px;
+	text-align: center;
+	letter-spacing: 6px;
+	margin-top: 100px;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+}
+
+.galery__biography {
+	font-size: 10.02px;
+	font-family: 'Agavalanchec';
+	font-weight: bold;
+	line-height: 21.04px;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	text-align: center;
+	padding-bottom: 100px;
+
+	&:after {
+		content: '\e903';
+		font-size: 4px;
+		font-family: 'icomoon';
+		vertical-align: middle;
+		padding-left: 20px;
+	}
+}
+
+.galery__photo {
+	display: inline-block;
+	float: left;
+	width: 50%;
+	padding: 2px 0 2px 4px;
+
+	&.galery__photo--lg {
+		width: 100%;
+	}
+}
+
+.galery__more {
+	text-align: center;
+	font-family: 'Agavalanchec';
+	font-weight: bold;
+	font-size: 10.15px;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	clear: both;
+
+	&:after {
+		content: '. . .';
+		letter-spacing: 0;
+		top: 0;
+		position: relative;
+		left: 10px;
+		top: -2px;
+		padding: 0 8px 5px 8px;
+		border: 1px solid #e2e2e2;
+		cursor: pointer;
+	}
+}
