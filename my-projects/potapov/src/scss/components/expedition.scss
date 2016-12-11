@@ -20,8 +20,10 @@
 	font-family: 'Agavalanchec';
 	font-size: 10.02px;
 	letter-spacing: 3px;
+	pointer-events: none;
+	pointer-events: all;
 
-	&:before {
+	.switch-left:before {
 		content: '\e902';
 		font-family: 'icomoon';
 		font-size: 5px;
@@ -29,7 +31,7 @@
 		cursor: pointer;
 		vertical-align: middle;
 	}
-	&:after {
+	.switch-right:after {
 		content: '\e903';
 		font-family: 'icomoon';
 		font-size: 5px;
@@ -76,15 +78,74 @@
 	.note__img {
 		float: left;
 		width: 660px;
+		position: relative;
+		height: 408px;
 
-		img {
-			float: right;
+		.img {
+			position: absolute;
+			right: 0;
+			top: 0;
 			width: 615px;
+			opacity: 0;
+			transition: all 1s;
+
+			&.img--active {
+				opacity: 1;
+				right: 0;
+				top: 0;
+			}
+		}
+
+		.note__num {
+			font-family: 'Agavalanchec';
+			font-weight: bold;
+			font-size: 10px;
+			letter-spacing: 2px;
+			position: absolute;
+			top: 120px;
+			left: 0;
+			transform: rotate(-90deg);
+		}
+
+		.note__switch {
+			position: absolute;
+			top: 100%;
+			right: 0;
+			margin-top: 30px;
+			width: 80px;
+
+
+			.switch-item {
+				position: relative;
+				width: 5px;
+				height: 5px;
+				display: inline-block;
+				cursor: pointer;
+
+				&:after {
+					content: '';
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 5px;
+					height: 5px;
+					background-color: rgba(80, 80, 80, 0.09);
+				}
+
+				&.switch-item--active {
+					&:after {
+						content: '';
+						width: 5px;
+						height: 5px;
+						background-color: rgba(80, 80, 80, 0.52);
+					}
+				}
+			}
 		}
 	}
 
 	.note__text {
-		float: left;
+		float: right;
 		width: 220px;
 		padding-left: 35px;
 

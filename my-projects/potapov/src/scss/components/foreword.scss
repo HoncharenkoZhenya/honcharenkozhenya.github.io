@@ -43,6 +43,7 @@
 }
 
 .foreword__paragraph {
+	display: none;
 	width: 530px;
 	overflow: hidden;
 	font-family: 'Agavalanchec';
@@ -53,6 +54,10 @@
 	margin-top: 100px;
 	margin-bottom: 50px;
 	margin-left: 280px;
+
+	&.foreword__paragraph--active {
+		display: block;
+	}
 }
 
 .foreword__biography {
@@ -64,6 +69,7 @@
 	text-transform: uppercase;
 	margin-left: 280px;
 	padding-bottom: 80px;
+	cursor: pointer;
 
 	&:after {
 		content: '\e903';

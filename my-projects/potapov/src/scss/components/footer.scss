@@ -5,7 +5,8 @@
 	line-height: 21.04px;
 	letter-spacing: 3px;
 	text-transform: uppercase;
-	float: left;
+	position: absolute;
+	left: 0;
 	width: auto;
 
 	&:after {
@@ -24,7 +25,8 @@
 	line-height: 21.04px;
 	letter-spacing: 3px;
 	text-transform: uppercase;
-	float: right;
+	position: absolute;
+	right: 0;
 	width: auto;
 
 	&:after {
@@ -56,7 +58,8 @@
 }
 
 .footer__made {
-	float: left;
+	position: absolute;
+	left: 0;
 	white-space: nowrap;
 	width: auto;
 
@@ -66,8 +69,8 @@
 }
 
 .footer__develop {
-	float: right;
-	white-space: nowrap;
+	position: absolute;
+	right: 0;
 	width: auto;
 }
 

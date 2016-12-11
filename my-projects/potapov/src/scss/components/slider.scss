@@ -80,10 +80,13 @@
 		letter-spacing: 3px;
 		padding-top: 4.36vh;
 		text-transform: uppercase;
+		cursor: pointer;
 
 		&:after {
 			content: '\e903';
-			font-family: 'icomoon'
+			font-family: 'icomoon';
+			font-size: 4px;
+			padding-left: 10px;
 		}
 	}
 
@@ -122,6 +125,7 @@
 		position: absolute;
 		top: 46px;
 		right: 60px;
+		cursor: pointer;
 	}
 
 	.icon-menu {
@@ -131,6 +135,7 @@
 		left: 75px;
 		padding: 2px;
 		border: 2px solid #fff;
+		cursor: pointer;
 	}
 
 	.icon-double-arrow-down {
@@ -138,6 +143,11 @@
 		right: 70px;
 		bottom: 50px;
 		color: #fff;
+		transition: all 0.3s;
+
+		&:hover {
+			bottom: 45px;
+		}
 	}
 
 	.slider__language {

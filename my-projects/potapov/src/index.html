@@ -32,11 +32,11 @@
 		<div class="slider__language">RU</div>
 		<i class="icon-map"></i>
 		<i class="icon-menu"></i>
-		<a href="#"><i class="icon-double-arrow-down"></i></a>
+		<a href="#part2"><i class="icon-double-arrow-down"></i></a>
 	</div>
 	<!-- End slider -->
 	<!-- Foreword Start -->
-	<div class="container">
+	<div class="container" id="part2">
 		<h3 class="foreword__heading">предисловие автора</h3>
 		<div class="foreword__switch">
 			<i class="switch-item switch-item--active"></i>
@@ -45,11 +45,32 @@
 			<i class="switch-item"></i>
 			<i class="switch-item"></i>
 		</div>
-		<p class="foreword__paragraph">
+		<p class="foreword__paragraph foreword__paragraph--active">
 			моё имя владимир оглоблин.<br>
 			Добро пожаловать на мой сайт. Это мой открытый дневник. Он посвящён природе и всему тому,
 			что с ней происходит.
 		</p>
+		<p class="foreword__paragraph">
+			моё имя владимир оглоблин.2<br>
+			Добро пожаловать на мой сайт. Это мой открытый дневник. Он посвящён природе и всему тому,
+			что с ней происходит.
+		</p>
+		<p class="foreword__paragraph">
+			моё имя владимир оглоблин.3<br>
+			Добро пожаловать на мой сайт. Это мой открытый дневник. Он посвящён природе и всему тому,
+			что с ней происходит.
+		</p>
+		<p class="foreword__paragraph">
+			моё имя владимир оглоблин.4<br>
+			Добро пожаловать на мой сайт. Это мой открытый дневник. Он посвящён природе и всему тому,
+			что с ней происходит.
+		</p>
+		<p class="foreword__paragraph">
+			моё имя владимир оглоблин.5<br>
+			Добро пожаловать на мой сайт. Это мой открытый дневник. Он посвящён природе и всему тому,
+			что с ней происходит.
+		</p>
+
 		<div class="foreword__biography">биография</div>
 	</div>
 	<hr>
@@ -64,11 +85,56 @@
 			<h3 class="galery__heading">галерея работ</h3>
 			<div class="galery__biography">все альбомы</div>
 		</div>
-		<img src="img/photo-1-min.jpg" alt="photo1" class="galery__photo">
-		<img src="img/photo-2-min.jpg" alt="photo2" class="galery__photo">
-		<img src="img/photo-3-min.jpg" alt="photo3" class="galery__photo galery__photo--lg">
-		<img src="img/photo-4-min.jpg" alt="photo4" class="galery__photo">
-		<img src="img/photo-5-min.jpg" alt="photo5" class="galery__photo">
+		<div class="galery__img">
+			<img src="img/photo-1-min.jpg" alt="photo1" class="galery__photo">
+			<div class="galery__hover">
+				<div class="hover__content">
+					<div class="content__heading">очаровывающая якутия</div>
+					<div class="content__share">share</div>
+					<div class="content__watch">смотреть</div>
+				</div>
+			</div>
+		</div>
+		<div class="galery__img">
+			<img src="img/photo-2-min.jpg" alt="photo2" class="galery__photo">
+			<div class="galery__hover">
+				<div class="hover__content">
+					<div class="content__heading">холодная и ветренная колыма</div>
+					<div class="content__share">share</div>
+					<div class="content__watch">смотреть</div>
+				</div>
+			</div>
+		</div>
+		<div class="galery__img galery__img--lg">
+			<img src="img/photo-3-min.jpg" alt="photo3" class="galery__photo galery__photo--lg">
+			<div class="galery__hover">
+				<div class="hover__content">
+					<div class="content__heading">необъятные просторы горного алтая</div>
+					<div class="content__share">share</div>
+					<div class="content__watch">смотреть</div>
+				</div>
+			</div>
+		</div>
+		<div class="galery__img">
+			<img src="img/photo-4-min.jpg" alt="photo4" class="galery__photo">
+			<div class="galery__hover">
+				<div class="hover__content">
+					<div class="content__heading">латвия спокойна и стройна</div>
+					<div class="content__share">share</div>
+					<div class="content__watch">смотреть</div>
+				</div>
+			</div>
+		</div>
+		<div class="galery__img">
+			<img src="img/photo-5-min.jpg" alt="photo5" class="galery__photo">
+			<div class="galery__hover">
+				<div class="hover__content">
+					<div class="content__heading">латвия спокойна и стройна</div>
+					<div class="content__share">share</div>
+					<div class="content__watch">смотреть</div>
+				</div>
+			</div>
+		</div>
 		<div class="galery__more">показать ещё</div>
 		<hr>
 	</div>
@@ -77,13 +143,31 @@
 	<!-- Start expedition -->
 	<div class="container">
 		<div class="expedition__year">2012</div>
-		<div class="expedition__page-switch"><span id="page-switch__num">1</span> / 8</div>
+		<div class="expedition__page-switch"><span class="switch-left"></span><span id="page-switch__num">1</span> / 8 <span class="switch-right"></span></div>
 		<h3 class="expedition__heading">фотоэкспедиции</h3>
 		<div class="expedition__more">все записи</div>
 
 		<div class="expedition__note clearfix">
 			<div class="note__img">
-				<img src="img/exp-min.jpg" alt="">
+				<span class="note__num">01</span>
+				<img src="img/exp-1-min.jpg" alt="" class="img img--active">
+				<img src="img/exp-2-min.jpg" alt="" class="img">
+				<img src="img/exp-3-min.jpg" alt="" class="img">
+				<img src="img/exp-4-min.jpg" alt="" class="img">
+				<img src="img/exp-5-min.jpg" alt="" class="img">
+				<img src="img/exp-6-min.jpg" alt="" class="img">
+				<img src="img/exp-7-min.jpg" alt="" class="img">
+				<img src="img/exp-8-min.jpg" alt="" class="img">
+				<div class="note__switch">
+					<i class="switch-item switch-item--active"></i>
+					<i class="switch-item"></i>
+					<i class="switch-item"></i>
+					<i class="switch-item"></i>
+					<i class="switch-item"></i>
+					<i class="switch-item"></i>
+					<i class="switch-item"></i>
+					<i class="switch-item"></i>
+				</div>
 			</div>
 			<div class="note__text">
 				<div class="note__year">2012, 2014</div>
