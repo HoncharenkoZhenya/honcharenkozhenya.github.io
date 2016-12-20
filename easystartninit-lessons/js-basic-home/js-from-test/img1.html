@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>img1</title>
+</head>
+<body>
+<input type="text" id="str" style="width: 100%"><button onclick="showAnswer()">Show answer</button>
+<div id="answer"></div>
+	<script>
+	function sulution(S) {
+		s = S.replace(/\!/g,'.').replace(/\?/g,'.').split('.');
+		var arrLength = s.map(function (i) {
+			return i.split(' ').filter(function (i) {
+				return i;
+			}).length;
+		});
+		return Math.max.apply(null, arrLength);
+	}
+	function showAnswer() {
+		var s = document.getElementById('str').value;
+
+		document.getElementById('answer').innerHTML = sulution(s) ? sulution(s) : 1;
+	}
+
+	</script>
+</body>
+</html>
