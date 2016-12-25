@@ -1,0 +1,13 @@
+.container {
+	width: 945px;
+	margin: 0 auto;
+	position: relative;
+
+
+	&.container--narrow {
+		width: 930px;
+	}
+	&.container--wide {
+		width: 980px;
+	}
+}

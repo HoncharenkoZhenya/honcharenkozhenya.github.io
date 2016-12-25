@@ -1,0 +1,283 @@
+.card {
+	position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 600px;
+  background-color: #fff;
+}
+
+.card__logo {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: inline-block;
+	width: 185px;
+	height: 52px;
+	background-color: #272727;
+
+	img {
+		position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	}
+}
+
+.card__slider {
+	float: left;
+	width: 50%;
+	height: 100%;
+	position: relative;
+
+	.slider {
+		margin-top: 100px;
+		margin-left: 55px;
+		position: relative;
+
+		.slider__item {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			opacity: 0;
+			transition: all .3s;
+
+			&.slider__item--active {
+				opacity: 1;
+			}
+		}
+	}
+
+	.slider__swicth {
+		position: absolute;
+		bottom: 46px;
+		text-align: center;
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.switch__item {
+		display: inline-block;
+		width: 18px;
+		height: 3px;
+		background-color: #d7d7d7;
+		cursor: pointer;
+
+		&.switch__item--active {
+			background-color: #536dfe;
+		}
+	}
+
+	.slider__arrows {
+		position: absolute;
+		bottom: 80px;
+		text-align: center;
+		width: 100%;
+		margin: 0 auto;
+
+		.icon-arrow.arrow--left {
+			position: absolute;
+			top: 0;
+			left: 42%;
+			transform: rotate(-90deg);
+			cursor: pointer;
+		}
+
+		.icon-arrow.arrow--right {
+			position: absolute;
+			top: 0;
+			right: 42%;
+			transform: rotate(90deg);
+			cursor: pointer;
+		}
+	}
+}
+
+.card__detail {
+	float: left;
+	width: 50%;
+	padding: 50px 40px;
+	font-family: 'Titillium Web';
+	color: #263238;
+}
+
+.detail__model {
+	font-size: 12px;
+	letter-spacing: 0.1em;
+
+	span {
+		float: right;
+		color: #536dfe;
+		font-size: 13px;
+		letter-spacing: 0.025em;
+		text-transform: uppercase;
+
+		&:before {
+			content: '\e900';
+			font-family: 'icomoon';
+			color: #536dfe;
+		}
+	}
+}
+
+.detail__name {
+	font-size: 29px;
+	letter-spacing: 0.025em;
+	line-height: 35px;
+	padding-top: 20px;
+}
+
+.detail__main-info {
+	font-size: 17px;
+	letter-spacing: 0.01em;
+	color: #646b6f;
+	line-height: 24px;
+	padding-top: 20px;
+}
+
+.detail__description {
+	font-size: 14px;
+	letter-spacing: 0.025em;
+	line-height: 23px;
+	padding-top: 25px;
+
+	span {
+		color: #536dfe;
+	}
+}
+
+.detail__rating {
+	padding-top: 25px;
+
+	.icon-star-on {
+		color: #fccf47;
+		cursor: pointer;
+	}
+	.icon-star-off {
+		color: #c9c9c9;
+		cursor: pointer;
+	}
+}
+
+.rating__count {
+	font-size: 15px;
+	color: #f1425d;
+	letter-spacing: 0.1em;
+	line-height: 35px;
+	padding-left: 35px;
+}
+
+.rating__rewiews {
+	font-size: 13px;
+	color: #656c6f;
+	letter-spacing: 0.025em;
+	line-height: 35px;
+	padding-left: 3px;
+}
+
+.detail__color {
+	float: right;
+	font-size: 12px;
+	color: #37474f;
+	letter-spacing: 0.01em;
+	padding-top: 25px;
+
+	label {
+		display: inline-block;
+		float: right;
+		margin-left: 15px;
+
+		&:after {
+			content: '\e901';
+			font-family: 'icomoon';
+			font-size: 20px;
+			color: #e8e6e3;
+		}
+	}
+
+	.color-radio {
+		display: none;
+		&:checked ~ label:after {
+			content: '\e902';
+			color: #3c383a;
+			padding: 1px;
+			border: 1px solid #afbbff;
+			border-radius: 20px;
+		}
+	}
+}
+
+.detail__price {
+	font-size: 26px;
+	letter-spacing: 0.035em;
+	font-weight: 600;
+	color: #f1425d;
+	padding-top: 30px;
+}
+.price__info {
+	font-size: 12px;
+	color: #37474f;
+	letter-spacing: 0.05em;
+}
+
+.detail__add-card {
+	float: right;
+	display: inline-block;
+	width: 146px;
+	height: 46px;
+	line-height: 46px;
+	background-color: #536dfe;
+	text-align: center;
+	color: #ffffff;
+	font-size: 17px;
+	letter-spacing: 0.025em;
+	margin-top: 30px;
+	text-decoration: none;
+	transition: all .3s;
+
+	&:hover {
+		background-color: #547dff;
+	}
+}
+
+.deteail__count {
+	font-size: 13px;
+	color: #37474f;
+	letter-spacing: 0.05em;
+	float: left;
+	position: relative;
+	margin-top: 30px;
+
+	input {
+		border: 1px solid #dddddd;
+		font-size: 18px;
+		line-height: 35px;
+		letter-spacing: 0.025em;
+		color: #403f40;
+		width: 46px;
+		height: 46px;
+		padding: 0 12px;
+		margin-left: 10px;
+	}
+
+	.icon-arrow {
+		position: absolute;
+		left: 100%;
+		margin-left: 10px;
+		cursor: pointer;
+
+		&.arrow--down {
+			bottom: 8px;
+			transform: rotate(180deg);
+			margin-left: 9px;
+		}
+		&.arrow--top {
+			top: 8px;
+		}
+	}
+
+
+}
