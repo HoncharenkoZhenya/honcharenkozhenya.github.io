@@ -1,0 +1,25 @@
+.main-nav {
+	display: flex;
+	width: 620px;
+	margin: 0 auto;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 35px;
+}
+
+.main-nav__item {
+	font-family: $font-main;
+	color: $color-menu;
+	font-weight: bold;
+	font-size: .8em;
+	letter-spacing: .2em;
+	text-decoration: none;
+	text-transform: uppercase;
+
+	&:nth-child(3n+1):after {
+		content: '.';
+		position: relative;
+		cursor: default;
+		left: 40px;
+	}
+}

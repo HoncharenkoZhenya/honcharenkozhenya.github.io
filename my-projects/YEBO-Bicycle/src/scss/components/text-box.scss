@@ -1,0 +1,38 @@
+.text-box {
+	padding: 70px 0 95px;
+	text-align: center;
+
+	&.text-box--secondary {
+		padding: 120px 0 140px;
+		background-color: $bgc-secondary;
+	}
+}
+
+.text-box__container {
+	width: 75%;
+	min-width: 400px;
+	margin: 0 auto;
+
+	.text-box.text-box--secondary & {
+		width: 65%;
+		min-width: 1040px;
+	}
+}
+
+.text-box__heading {
+	padding-top: 20px;
+	font-size: 1.125em;
+	color: $color-heading;
+	letter-spacing: .2em;
+}
+
+.text-box__info {
+	color: $color-text;
+	text-justify: justify;
+	line-height: 1.875em;
+
+	.text-box.text-box--secondary & {
+		font-size: 1.125em;
+		line-height: 1.89em;
+	}
+}
