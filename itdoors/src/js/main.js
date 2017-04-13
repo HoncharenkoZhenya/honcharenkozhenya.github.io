@@ -1,1 +1,0 @@
-//= partials/onClikFunktions.js
