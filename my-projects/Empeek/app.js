@@ -51,7 +51,7 @@ newsApp.controller('NewsAppController', function NewsAppController($scope) {
   ];
 
   // set localStorage
-  if (!localStorage.getItem('news')) _safeToLocalStorege();;
+  if (!localStorage.getItem('news')) _safeToLocalStorege(news);;
 
 
   $scope.news = JSON.parse(localStorage.getItem('news'));
@@ -64,7 +64,7 @@ newsApp.controller('NewsAppController', function NewsAppController($scope) {
       comments: []
     });
 
-    _safeToLocalStorege();
+    _safeToLocalStorege($scope.news);
 
     $scope.newNews = null;
   }
@@ -75,19 +75,19 @@ newsApp.controller('NewsAppController', function NewsAppController($scope) {
       comment: newComment
     });
 
-    _safeToLocalStorege();
+    _safeToLocalStorege($scope.news);
   }
 
   $scope.setActive = function (item) {
     _clearActiveNews();
     item.isActive = true;
-    _safeToLocalStorege();
+    _safeToLocalStorege($scope.news);
   }
 
   $scope.deleteItem = function (index) {
     console.log(index);
     $scope.news.splice(index, 1);
-    _safeToLocalStorege();
+    _safeToLocalStorege($scope.news);
   }
 
   function _clearActiveNews() {
@@ -97,8 +97,8 @@ newsApp.controller('NewsAppController', function NewsAppController($scope) {
     })
   }
 
-  function _safeToLocalStorege() {
-    localStorage.setItem('news', JSON.stringify($scope.news));
+  function _safeToLocalStorege(news) {
+    localStorage.setItem('news', JSON.stringify(news));
   }
 
 
